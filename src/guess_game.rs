@@ -5,7 +5,7 @@ use std::io;
 const DEBUG: bool = false;
 const RANGE: u8 = 100; // from 0 -> RANGE (lower than 255)
 
-fn main() {
+pub fn game() {
     // GET A SECRET NUMBER
     let secret: u8 = (random::<f64>() * RANGE as f64).round() as u8;
 
